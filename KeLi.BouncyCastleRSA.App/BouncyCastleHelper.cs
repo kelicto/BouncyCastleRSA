@@ -35,13 +35,13 @@ namespace KeLi.BouncyCastleRSA.App
 
             var asn1ObjectPublic = subjectPublicKeyInfo.ToAsn1Object();
 
-            var publicInfoByte = asn1ObjectPublic.GetEncoded("UTF-8");
+            var publicInfoByte = asn1ObjectPublic.GetEncoded(Encoding.UTF8.EncodingName);
 
             var privateKeyInfo = PrivateKeyInfoFactory.CreatePrivateKeyInfo(privateKey);
 
             var asn1ObjectPrivate = privateKeyInfo.ToAsn1Object();
 
-            var privateInfoByte = asn1ObjectPrivate.GetEncoded( "UTF-8");
+            var privateInfoByte = asn1ObjectPrivate.GetEncoded(Encoding.UTF8.EncodingName);
 
             return new RsaKey
             {
