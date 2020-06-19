@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto">
-      <HintPath>..\Libs\BouncyCastle.Crypto 1.2\BouncyCastle.Crypto.dll</HintPath>
+      <HintPath>..\..\KeLi.Libs\BouncyCastle.Crypto 1.2\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
